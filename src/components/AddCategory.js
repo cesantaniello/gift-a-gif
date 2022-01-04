@@ -7,6 +7,7 @@ export const AddCategory = ({setCategories}) => {
 
     const handleInputChange = (e) => {
         setInputValue(e.target.value);
+        console.log('handleInputChange llamado');
     }
 
     const handleSubmit = (e) => {
@@ -22,6 +23,7 @@ export const AddCategory = ({setCategories}) => {
     return (
         <>
         <form onSubmit={handleSubmit}>
+            <p>{inputValue}</p>
             <input 
                 type="text" 
                 value={inputValue} 
